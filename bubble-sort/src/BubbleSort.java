@@ -5,14 +5,12 @@ public class BubbleSort {
 
         int[] numbers = {20, 35, -15, 7, 55, 1, -22};
 
-        int unsortedPartitionIndex = numbers.length - 1;
-        while (unsortedPartitionIndex > 0) {
-            for (int i = 0; i < unsortedPartitionIndex; i++) {
+        for (int unsortedIndex = numbers.length - 1; unsortedIndex > 0; unsortedIndex--) {
+            for (int i = 0; i < unsortedIndex; i++) {
                 if (numbers[i] > numbers[i + 1]) {
                     swap(numbers, i, i + 1);
                 }
             }
-            unsortedPartitionIndex--;
         }
         System.out.println(Arrays.toString(numbers));
     }
