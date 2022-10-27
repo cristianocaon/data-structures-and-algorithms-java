@@ -9,13 +9,20 @@ public class BubbleSort {
         while (unsortedPartitionIndex > 0) {
             for (int i = 0; i < unsortedPartitionIndex; i++) {
                 if (numbers[i] > numbers[i + 1]) {
-                    int temp = numbers[i + 1];
-                    numbers[i + 1] = numbers[i];
-                    numbers[i] = temp;
+                    swap(numbers, i, i + 1);
                 }
             }
             unsortedPartitionIndex--;
         }
         System.out.println(Arrays.toString(numbers));
+    }
+
+    public static void swap(int[] array, int i, int j) {
+        if (i == j) {
+            return;
+        }
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
