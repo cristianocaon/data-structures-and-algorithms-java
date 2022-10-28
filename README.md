@@ -6,8 +6,9 @@ course from Udemy.
 
 ## Sort Algorithms
 
-* Bubble Sort
-* Selection Sort
+* Bubble Sort ---> O(n<sup>2</sup>)
+* Selection Sort ---> O(n<sup>2</sup>)
+* Insertion Sort ---> O(n<sup>2</sup>)
 
 ## Data Structures
 
