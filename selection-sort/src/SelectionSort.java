@@ -6,15 +6,13 @@ public class SelectionSort {
         int[] numbers = {20, 35, -15, 7, 55, 1, -22};
 
         for (int unsortedIdx = numbers.length - 1; unsortedIdx > 0; unsortedIdx--) {
-            int largest = numbers[0];
-            int largestIdx = 0;
+            int largest = 0;
             for (int i = 1; i <= unsortedIdx; i++) {
-                if (numbers[i] > largest) {
-                    largest = numbers[i];
-                    largestIdx = i;
+                if (numbers[i] > numbers[largest]) {
+                    largest = i;
                 }
             }
-            swap(numbers, largestIdx, unsortedIdx);
+            swap(numbers, largest, unsortedIdx);
         }
         System.out.println(Arrays.toString(numbers));
     }
