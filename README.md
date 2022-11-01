@@ -9,6 +9,7 @@ course from Udemy.
 * Bubble Sort ---> O(n<sup>2</sup>)
 * Selection Sort ---> O(n<sup>2</sup>)
 * Insertion Sort ---> O(n<sup>2</sup>)
+* Shell Sort ---> O(n<sup>2</sup>)
 
 ## Data Structures
 
