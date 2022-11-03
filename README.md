@@ -11,6 +11,7 @@ course from Udemy.
 * Insertion Sort ---> O(n<sup>2</sup>)
 * Shell Sort ---> O(n<sup>2</sup>)
 * Merge Sort --> O(n*log(n))
+* Quick Sort --> O(n*log(n))
 
 ## Data Structures
 
